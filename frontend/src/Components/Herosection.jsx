@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../Static/Herosection.modules.css";
+import styles from "../Static/Herosection.module.css";
 
 const Herosection = () => {
 
