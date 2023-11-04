@@ -1,22 +1,13 @@
-/* Set the background color of the entire page */
-body {
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    background-color: blue; /* Set background color */
-    height: 100%; /* Full height */
-    width: 100%; /* Full width */
+/* Set the background color of the entire page and full height */
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: blue;
   }
   
-  /* Add the plane image at the bottom of the page */
-  body::after {
-    content: "";
-    position: fixed; /* Fixed position */
-    left: 0;
-    bottom: 0;
-    width: 100%; /* Full width */
-    height: auto; /* Adjust height automatically */
-    background: url('path_to_your_plane_image.jpg') no-repeat bottom; /* Set your image path here */
-    background-size: contain; /* Use 'cover' to fill the entire width or 'contain' to ensure the entire image is visible */
-    z-index: -1; /* Ensure it's behind the content */
+ 
+  .page-content {
+    position: relative;
+    
   }
   

@@ -1,6 +1,7 @@
 import React from 'react'
 import Herosection from '../Components/Herosection'
 import Header from '../Components/Header'
+import Main from '../Components/Main'
 
 
 const HomePage = () => {
@@ -10,6 +11,7 @@ const HomePage = () => {
    
       <Header />
       <Herosection />
+      <Main />
   
     </div>
   
