@@ -16,5 +16,3 @@ export const Main = () => {
 
 export default Main;
 
-// blue screen
-// plane
