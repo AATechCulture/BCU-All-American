@@ -4,6 +4,7 @@ import Header from '../Components/Header'
 import styles from './Homepage.module.css'
 
 
+
 const HomePage = () => {
 
   return (
@@ -11,6 +12,7 @@ const HomePage = () => {
    
       <Header />
       <Herosection />
+      <Main />
   
     </div>
   

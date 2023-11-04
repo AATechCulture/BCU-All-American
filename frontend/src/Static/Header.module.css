@@ -2,6 +2,7 @@
     font-family: "Ubuntu", "sans-serif";
 }
 
+
 .Header{
     height: 30%;
 }
@@ -10,21 +11,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80px; 
-    background-color: white; 
+    /* height: 80px;  */
+    background-color:#EBEBEBD9;
     overflow: auto;
 }
 
-.Header  .Logo{
-    background-color: white; 
-    border: 2px solid red;
-
-}
 
 .Header img {
     width: 40px; 
     height: auto;
-    margin-right: 100px; 
+    margin-right: 10px; 
 }
 
 .Header h1 {
