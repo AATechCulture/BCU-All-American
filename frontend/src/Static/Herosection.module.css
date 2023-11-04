@@ -1,3 +1,11 @@
 .Herosection > div > h5{
     color: #FFFFFF;
 }
+
+.Herosection > :nth-child(2){
+    color: #D35757;
+}
+
+.Herosection > :nth-child(3){
+    color: #0084FF;
+}
