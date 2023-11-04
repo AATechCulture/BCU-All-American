@@ -4,14 +4,13 @@
 
 
 .Header{
-    height: 30%;
+    height: 40%;
 }
 
 .Header > * {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* height: 80px;  */
     background-color:#EBEBEBD9;
     overflow: auto;
 }
