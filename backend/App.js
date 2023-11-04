@@ -9,12 +9,16 @@ app.get("/", (req, res, next) => {
 }) 
 
 // Handling GET /hello request 
-app.get("/hello", (req, res, next) => { 
-	res.send("This is the hello response"); 
+app.get("/virtual-queue", (req, res, next) => { 
+	res.send("This is the virtual queue page"); 
 }) 
 
-app.get("/about", (req, res)=>{
-    res.send("This is the about page")
+app.get("/safety-game", (req, res)=>{
+    res.send("This is the safety game page")
+})
+
+app.get("/destination-explore", (req, res) => {
+	res.send("This is the destination explore page")
 })
 // Server setup 
 app.listen(8080, () => { 
