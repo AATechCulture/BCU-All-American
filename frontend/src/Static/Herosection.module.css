@@ -1,5 +1,5 @@
 .Herosection > div > h5{
-<<<<<<< HEAD
+
     color: #FFFFFF;
 }
 
@@ -9,7 +9,5 @@
 
 .Herosection > :nth-child(3){
     color: #0084FF;
-=======
-    color: yellow;
->>>>>>> 54ad9e89d242104a9825ec9d087254acc5d2cae1
+
 }
