@@ -3,12 +3,19 @@
 }
 
 
-.Header {
+.Header > * {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 80px; 
-    background-color: blue; 
+    background-color: white; 
+    overflow: auto;
+}
+
+.Header  .Logo{
+    background-color: white; 
+    border: 2px solid red;
+
 }
 
 .Header img {
@@ -19,5 +26,6 @@
 
 .Header h1 {
     font-size: 1.5em;
-    margin: 100;
+    margin: 10;
 }
+
