@@ -2,6 +2,9 @@
     font-family: "Ubuntu", "sans-serif";
 }
 
+.Header{
+    height: 30%;
+}
 
 .Header > * {
     display: flex;
