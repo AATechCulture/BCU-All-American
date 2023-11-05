@@ -1,20 +1,15 @@
-import './App.css';
-import HomePage from './Screens/HomePage';
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Game from './Screens/Game';
-import Header from "./Components/Header";
-import QueueStatus from './Components/QueueStatus'; // Unused import?
-import JoinQueue from './Screens/JoinQueue';
+import Home from './pages/Home.jsx'; 
+
+
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Header />
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/game" element={<Game />} />
-          <Route path="/joinqueue" element={<JoinQueue />} />
+          <Route path="/" element={<Home/>} />
         </Routes>
       </div>
     </Router>
@@ -22,3 +17,5 @@ function App() {
 }
 
 export default App;
+
+
