@@ -5,6 +5,7 @@ import Form from './pages/Form.jsx'
 import Queue from './pages/Queue.jsx';
 import Game from './pages/Game.jsx';
 import Tour from './pages/Tour.jsx'
+import Destination from './pages/Destination.jsx';
 
 
 
@@ -17,7 +18,7 @@ function App() {
           <Route path="/form" element={<Form/>} />
           <Route path="/queue" element={<Queue/>} />
           <Route path="/game" element={<Game/>} />
-          <Route path="/tour" element={<Tour/>} />
+          <Route path="/tour" element={<Destination/>} />
         </Routes>
       </div>
     </Router>
