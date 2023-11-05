@@ -21,17 +21,17 @@ function HomeMain() {
         </div>
         <div className='bg-white md:hidden w-1/2 h-1 rounded-md'>
         </div>
-        <a href='/queue' className='outline md:mx-7 lg:mx-12 xl:mx-24 mt-8 px-6 py-3 tracking-tighter text-lg text-extrabold rounded-lg'>
+        <a href='/queue' className='outline md:mx-7 lg:mx-12 xl:mx-24 px-6 py-3 tracking-tighter text-lg text-extrabold rounded-lg'>
             View Queue Status
         </a>
       </div>
       <div className='flex w-full flex-col md:flex-row items-center justify-center'>
         <div className='mt-12 md:mx-7 lg:mx-12 xl:mx-24 mb-3 flex flex-col justify-center'>
-          <a href='/game' className='border bo bg-american-red-2 opacity-70 px-6 py-3 text-center w-full tracking-tighter text-lg text-extrabold rounded-lg'>
+          <a href='/game' className='border-2 border-american-bright-blue bg-american-red-2 opacity-70 px-6 py-3 text-center w-full tracking-tighter text-lg text-extrabold rounded-lg'>
             Play our NEW All-American Safety Game!
           </a>
         </div>
-        <a href='/tour' className=' bg-american-blue-2 border-american-bright-blue border-10 opacity-70 md:mx-7 lg:mx-12 xl:mx-24 mt-8 px-6 py-3 tracking-tighter text-lg text-extrabold rounded-lg'>
+        <a href='/tour' className='bg-american-blue-2 border-2 border-american-bright-blue border-10 opacity-70 md:mx-7 lg:mx-12 xl:mx-24 mt-8 px-6 py-3 tracking-tighter text-lg text-extrabold rounded-lg'>
             Take A Virtual Tour of Any Destination!
         </a>
       </div>
