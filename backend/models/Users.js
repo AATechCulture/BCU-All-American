@@ -10,8 +10,8 @@ const UserSchema = new mongoose.Schema({
         required: true
     },
     Desk: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Desk'
+        type: String,
+        required: true,
     },
     ConcernDescription: {
         type: String,

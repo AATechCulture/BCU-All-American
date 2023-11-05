@@ -1,9 +1,12 @@
-import React from 'react';
-
+import React, { useContext } from 'react';
+import { UserContext } from '../UserContext';
 
 const plane = require("../resources/plane.png")
 
 function QueueBody() {
+
+  const { username } = useContext(UserContext);
+
   return (
     <div className='font-ubuntu text-white bg-b text-sm'>
       <div className='flex mt-20 text-2xl sm:text-3xl md:text-4xl xl:text-5xl font-extrabold flex-column justify-center items-center'>
@@ -13,7 +16,8 @@ function QueueBody() {
       <div className="font-ubuntu flex w-screen mt-24 p-4 justify-center items-center text-white text-sm">
             <div className="w-1/3  bg-gray-500 rounded-lg p-10">
                   <div className="text-center text-xl" >
-                    <p>Hey There! You are the <span className='text-american-bright-blue'>3rd</span> person in line!</p>
+                    <p>Hey There, {username}!</p>
+                    <p>You are the <span className='text-american-bright-blue'>3rd</span> person in line!</p>
                     <p>We will get to you in 15 more minutes!</p>
 
                 </div>
