@@ -12,7 +12,7 @@ function DestinationTour() {
   const fetchTouristImages = () => {
     // Replace 'YOUR_FLICKR_API_KEY' with your actual Flickr API key
     const apiKey = 'ea2bcfb8bcd0cb9265d755f2f4424028';
-    const apiUrl = `https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${apiKey}&text=${city} buildings&format=json&nojsoncallback=1`;
+    const apiUrl = `https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${apiKey}&text=${city} Tourist Places&format=json&nojsoncallback=1`;
 
     axios.get(apiUrl)
       .then((response) => {
@@ -28,19 +28,22 @@ function DestinationTour() {
   };
 
   return (
-    <div>
-      <h2>City Tourist Images</h2>
+    <div className="p-4">
+      <h2 className="text-3xl text-white mb-4">City Tourist Images</h2>
       <input
         type="text"
         placeholder="Enter a city name"
         value={city}
         onChange={handleCityChange}
+        className="px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring focus:ring-white-300"
       />
-      <button onClick={fetchTouristImages}>Search</button>
-      <div className="image-grid">
+      <button onClick={fetchTouristImages} className="bg-indigo-600 text-white px-4 py-2 rounded-md ml-2 hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-indigo-300">
+        Search
+      </button>
+      <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {images.map((imageUrl, index) => (
-          <div className="image-container" key={index}>
-            <img src={imageUrl} alt={`Tourist Place ${index + 1}`} />
+          <div key={index} className="bg-white p-4 rounded-md shadow">
+            <img src={imageUrl} alt={`Tourist Place ${index + 1}`} className="w-full h-48 object-cover" />
           </div>
         ))}
       </div>

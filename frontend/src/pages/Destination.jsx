@@ -4,7 +4,7 @@ import DestinationTour from '../containers/DestinationTour';
 
 const Destination = () => {
     return (
-        <div className="w-screen h-screen  bg-american-blue-bg">
+        <div className="min-h-screen  bg-american-blue-bg">
             <Navbar />
             <DestinationTour />
         </div>
