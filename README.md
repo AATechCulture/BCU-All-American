@@ -5,30 +5,34 @@ This is a repository template containing all the information that needs to accom
 
 Feel free to use any languages or frameworks, but the following information must be filled out before hacking ends.
 ___________
-# Project Name
+# ALL-AMERICAN
 
 ## Challenge Statement(s) Addressed 🎯
-**...include the challenge statement(s) the project worked to address**
 
-Examples:
-* How might we decrease the United States chances of alien and monster attacks given what we know from popular alien and monster movies?
-* How might we make it possible for people in cities not to have to own a car by making car-sharing easier so that the environment will be less damaged and people can save money?
-* How might we ....
+1. How might we enhance the flight experience by minimizing queue times for services like customer support, especially during disruptions?
+2. How can we educate and entertain passengers both during the flight and during delays or layovers?
+
 
 ## Project Description 🤯
-**....at lease 3 sentences describing what the project does and how it works**
+1. A virtual queuing app to anticipate customer service demands, allowing passengers to schedule live chats with airline representatives during flight disruptions, reducing physical queue times.
+2. The system enhances communication by providing real-time updates and access to a wide range of on-demand entertainment options, minimizing the stress of travel disruptions.
+3. An edutainment system that offers interactive content on flight safety procedures and protocols, educating passengers via their personal devices while also providing entertainment to alleviate the stress of delays.
+
 
 ## Project Value 💰
-**....at lease 3 sentences describing your target customer and tangible benefits from your solution**
+1. The virtual queuing app can significantly enhance customer satisfaction by streamlining the customer service experience during stressful flight disruptions, which can foster loyalty and positive brand perception.
+2. By improving communication and providing a variety of on-demand entertainment choices, the system helps to mitigate the discomfort of travel delays, which can lead to increased customer retention and the potential for positive word-of-mouth recommendations
+3. The edutainment system not only ensures that passengers are well-informed about flight safety, which is paramount for any airline, but also improves the overall flight experience by engaging passengers with educational and entertaining content, potentially leading to higher customer satisfaction scores.
+
 
 
 ## Tech Overview 💻
 **... what tech was used to bring this project to life?**
 
+
 Example:
-* FastAPI
-* Hugging Face AI Models
-* Next.js
+* Flicker API
+
 
 
 ### ✨ Contributors ✨

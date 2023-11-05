@@ -1,64 +1,60 @@
-import React, { useRef, useEffect, useState } from 'react';
-import * as PIXI from 'pixi.js';
+import React, { useState } from 'react';
+import questions from '../data/questions.js';
+
 
 const GameContainer = () => {
-    const pixiContainer = useRef(null); // This container will hold our PixiJS application
-    const [count, setCount] = useState(0);
-    const [pixiApp, setPixiApp] = useState(null);
-    const [textElement, setTextElement] = useState(null);
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [score, setScore] = useState(0);
+  const [userAnswer, setUserAnswer] = useState('');
+  const [showResult, setShowResult] = useState(false);
 
-    // Initialize PixiJS Application
-    useEffect(() => {
-        let app = new PIXI.Application({
-            width: 800,
-            height: 600,
-            backgroundColor: 0x10bb99,
-        });
-        pixiContainer.current.appendChild(app.view); // Attach the PIXI application to our container div
-        setPixiApp(app);
+  const handleAnswerSubmit = () => {
+      if (userAnswer.toLowerCase() === questions[currentQuestion].answer.toLowerCase()) {
+          setScore(score + 1);
+          setShowResult('Correct!');
+      } else {
+          setShowResult('Wrong answer');
+      }
+  };
 
-        // Create a new Text element and add it to the stage
-        const textStyle = new PIXI.TextStyle({
-            fill: '#ffffff',
-            fontSize: 24,
-        });
-        const text = new PIXI.Text('Button clicked: 0 times', textStyle);
-        text.x = 100;
-        text.y = 100;
-        app.stage.addChild(text);
-        setTextElement(text);
+  const handleNextQuestion = () => {
+      if (currentQuestion + 1 < questions.length) {
+          setCurrentQuestion(currentQuestion + 1);
+          setShowResult(false);
+          setUserAnswer('');
+      } else {
+          // End of the game
+          setShowResult(`Game Over! Your final score is ${score}`);
+      }
+  };
 
-        // Load the image
-        const texture = PIXI.Texture.from('path_to_your_image.png'); // Replace with the path to your image
-        const imageSprite = new PIXI.Sprite(texture);
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-gray-900 text-white font-ubuntu">
+      <div className="text-center">
+        <h2 className="text-4xl mb-4">{`Question: ${questions[currentQuestion].question}`}</h2>
+        <input
+          type="text"
+          value={userAnswer}
+          onChange={(e) => setUserAnswer(e.target.value)}
+          placeholder="Enter True or False"
+          className="bg-white text-black rounded-lg p-2 mb-4"
+        />
+        <button className="bg-blue-500 text-white rounded-lg p-2 mr-2" onClick={handleAnswerSubmit}>
+          Submit
+        </button>
+        {showResult && <p className="mb-4">{showResult}</p>}
+        <p className="mb-4">Score: {score}</p>
+        <button className="bg-blue-500 text-white rounded-lg p-2" onClick={handleNextQuestion}>
+          Next Question
+        </button>
+      </div>
+    </div>
+  );
+  
+  
 
-        // Position the image
-        imageSprite.x = app.renderer.width / 2;
-        imageSprite.y = app.renderer.height / 2;
-        imageSprite.anchor.set(0.5); // This will center the sprite's anchor point
 
-        // Add the image to the stage
-        app.stage.addChild(imageSprite);
-
-        // Clean up PIXI application when the component is unmounted
-        return () => {
-            app.destroy(true, { children: true });
-        };
-    }, []);
-
-    // Update PixiJS Text Element when count changes
-    useEffect(() => {
-        if (textElement) {
-            textElement.text = `Button clicked: ${count} times`;
-        }
-    }, [count, textElement]);
-
-    return (
-        <div>
-            <div ref={pixiContainer} /> {/* This div is where the PixiJS canvas will be injected */}
-            <button onClick={() => setCount(count + 1)}>Click me!</button>
-        </div>
-    );
 };
+
 
 export default GameContainer;
