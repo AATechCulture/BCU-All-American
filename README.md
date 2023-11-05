@@ -45,15 +45,15 @@ Example:
 
 **...tell the world who you and your team are 🙂**
 
-* Adelina Kachinda (AAdvantage No)
+* Adelina Kachinda (C16LB78)
 
-* Aldridge Kalenga (AAdvantage No)
+* Aldridge Kalenga (V5CU476)
 
-* Mulenga Ngulale (AAdvantage No)
+* Mulenga Ngulale (F56DC76)
 
-* Raphael Boakya (AAdvantage No)
+* Raphael Boakya (L0LU474)
 
-* Uchenna Njoku (AAdvantage No)
+* Uchenna Njoku (P6FK526)
 
 
 ### School Name 🏫
@@ -67,13 +67,12 @@ Accreditors
 
 
 ### Link to Video Pitch 📹
-
-**...point us to where you tell us about your solution 😄**
-
+<!-- use command and enter or ctrl and enter on the link to view video pitch -->
+<img src="IMG_8249.mp4" alt="all-american pitch">Our video pitch</img>
 
 ### Link to Demo Presentation 📽
-
-**...point us to your PPT or Canva slides 😍**
+Team Presentation Deck.pdf
+* Within the repo!
 
 
 ### Team Checklist due before 5p Saturday 11/4 ✅
@@ -93,17 +92,17 @@ Accreditors
 
 ### Project Checklist due before 10a Sunday 11/5 🏁
 
-- [ ] Presentation complete and linked
+- [ check ] Presentation complete and linked
 
-- [ ] Video pitch recorded and linked
+- [ check ] Video pitch recorded and linked
 
-- [ ] Code merged to main branch
+- [ check ] Code merged to main branch
 
 
 ### Sample Checklist for Syntax Example
 
-- [ ] Presentation complete and linked
+- [ check ] Presentation complete and linked
 
-- [ ] Video pitch recorded and linked
+- [ check ] Video pitch recorded and linked
 
-- [ ] Code merged to main branch
+- [ check ] Code merged to main branch
