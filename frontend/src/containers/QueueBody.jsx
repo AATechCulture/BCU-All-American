@@ -12,11 +12,16 @@ function QueueBody() {
       
       <div className="font-ubuntu flex w-screen mt-24 p-4 justify-center items-center text-white text-sm">
             <div className="w-1/3  bg-gray-500 rounded-lg p-10">
-                <p>  ANY FORM OF QUEUE INFORMATION GOES IN HERE!</p>
+                  <div className="text-center text-xl" >
+                    <p>Hey There! You are the <span className='text-american-bright-blue'>3rd</span> person in line!</p>
+                    <p>We will get to you in 15 more minutes!</p>
+
+                </div>
+
             </div>
       </div>
 
-      <img className='w-100 h-100 absolute bot-0 object-contain' src={plane} alt="Plane"/>
+      <img className='w-100 h-100 absolute bottom-10 left-1/2 transform -translate-x-1/2 object-contain' src={plane} alt="Plane"/>
 
     </div>
   )

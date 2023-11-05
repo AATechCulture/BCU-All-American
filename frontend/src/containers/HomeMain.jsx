@@ -36,9 +36,11 @@ function HomeMain() {
         </a>
       </div>
 
-      <img className='w-100 h-100 absolute bot-0 object-contain mt-1' src={plane} alt="Plane"/>
+      <img className='w-100 h-100 absolute bottom-10 left-1/2 transform -translate-x-1/2 object-contain' src={plane} alt="Plane"/>
+
+
     </div>
   )
 }
 
-export default HomeMain
+export default HomeMain;
