@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home.jsx';
 import Form from './pages/Form.jsx' 
 import Queue from './pages/Queue.jsx';
-import Home from './pages/Home.jsx'; 
 import Game from './pages/Game.jsx';
 
 
