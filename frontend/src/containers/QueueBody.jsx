@@ -14,12 +14,9 @@ function QueueBody() {
             <div className="w-1/3  bg-gray-500 rounded-lg p-10">
                 <p>  ANY FORM OF QUEUE INFORMATION GOES IN HERE!</p>
             </div>
-        </div>
+      </div>
 
-        
-      {/* <div className="flex h-screen w-screen items-end justify-center">
-        <img className="object-contain h-20 w-20 mb-4" src={plane} alt="Plane"/>
-      </div> */}
+      <img className='w-100 h-100 absolute bot-0 object-contain' src={plane} alt="Plane"/>
 
     </div>
   )

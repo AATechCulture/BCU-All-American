@@ -21,7 +21,7 @@ function HomeMain() {
         </div>
         <div className='bg-white md:hidden w-1/2 h-1 rounded-md'>
         </div>
-        <a href='' className='outline md:mx-7 lg:mx-12 xl:mx-24 mt-8 px-6 py-3 tracking-tighter text-lg text-extrabold rounded-lg'>
+        <a href='/queue' className='outline md:mx-7 lg:mx-12 xl:mx-24 mt-8 px-6 py-3 tracking-tighter text-lg text-extrabold rounded-lg'>
             View Queue Status
         </a>
       </div>
@@ -36,7 +36,7 @@ function HomeMain() {
         </a>
       </div>
 
-    <img className='w-100 h-100 absolute bot-0 object-contain' src={plane} alt="Plane"/>
+      <img className='w-100 h-100 absolute bot-0 object-contain mt-1' src={plane} alt="Plane"/>
     </div>
   )
 }
