@@ -28,19 +28,21 @@ function DestinationTour() {
   };
 
   return (
-    <div className="p-4">
+    <div className="min-h-screen flex flex-col items-center justify-center">
       <h2 className="text-3xl text-white mb-4">City Tourist Images</h2>
       <input
         type="text"
         placeholder="Enter a city name"
         value={city}
         onChange={handleCityChange}
-        className="px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring focus:ring-white-300"
+        className="px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring focus:ring-white-300 mb-4"
       />
-      <button onClick={fetchTouristImages} className="bg-indigo-600 text-white px-4 py-2 rounded-md ml-2 hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-indigo-300">
-        Search
-      </button>
-      <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div className="mb-4">
+        <button onClick={fetchTouristImages} className="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-indigo-300">
+          Search
+        </button>
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {images.map((imageUrl, index) => (
           <div key={index} className="bg-white p-4 rounded-md shadow">
             <img src={imageUrl} alt={`Tourist Place ${index + 1}`} className="w-full h-48 object-cover" />
@@ -49,6 +51,8 @@ function DestinationTour() {
       </div>
     </div>
   );
+  
+
 }
 
 export default DestinationTour;

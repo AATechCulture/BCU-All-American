@@ -5,9 +5,8 @@ import GameContainer from '../containers/GameContainer';
 const Game = () => {
     return (
         <div className="w-screen h-screen overflow-hidden bg-american-blue-bg">
-            <Navbar />
+            <Navbar /> 
             <GameContainer />
-
         </div>
     );
 };

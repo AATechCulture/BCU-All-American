@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import questions from '../data/questions.js';
 
+const plane = require("../resources/plane.png")
 
 const GameContainer = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -31,7 +32,7 @@ const GameContainer = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-900 text-white font-ubuntu">
       <div className="text-center">
-        <h2 className="text-4xl mb-4">{`Question: ${questions[currentQuestion].question}`}</h2>
+        <h2 className="text-4xl mb-4">{`${questions[currentQuestion].question}`}</h2>
         <input
           type="text"
           value={userAnswer}
@@ -48,6 +49,7 @@ const GameContainer = () => {
           Next Question
         </button>
       </div>
+      <img className='w-100 h-100 absolute bottom-10 left-1/2 transform -translate-x-1/2 object-contain' src={plane} alt="Plane"/>
     </div>
   );
   
