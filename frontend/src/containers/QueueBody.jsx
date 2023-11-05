@@ -10,10 +10,11 @@ function QueueBody() {
         <p>Welcome To The <span className='text-american-red'>AA</span> <span className='text-american-bright-blue'>All-American</span> Center!</p>
       </div>
       
-      <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gray-500 p-8 rounded-md w-5 h-5">
-      <p>Put information of queue here!</p>
-     </div>
-
+      <div className="font-ubuntu flex w-screen mt-24 p-4 justify-center items-center text-white text-sm">
+            <div className="w-1/3  bg-gray-500 rounded-lg p-10">
+                <p>  ANY FORM OF QUEUE INFORMATION GOES IN HERE!</p>
+            </div>
+        </div>
 
         
       {/* <div className="flex h-screen w-screen items-end justify-center">
