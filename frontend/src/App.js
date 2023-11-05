@@ -1,15 +1,23 @@
-// import logo from './logo.svg';
 import './App.css';
 import HomePage from './Screens/HomePage';
-import QueueStatus from './Components/QueueStatus';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Game from './Screens/Game';
+import Header from "./Components/Header";
+import QueueStatus from './Components/QueueStatus'; // Unused import?
+import JoinQueue from './Screens/JoinQueue';
 
 function App() {
   return (
-
-    <div className="App">
-      <HomePage />
-      <QueueStatus />
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/game" element={<Game />} />
+          <Route path="/joinqueue" element={<JoinQueue />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

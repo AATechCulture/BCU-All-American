@@ -4,15 +4,18 @@
 
 
 .Header{
-    height: 70%;
+    background-color: #EBEBEBD9;
 }
 
 .Header > * {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:#EBEBEBD9;
-    overflow: auto;
+
+}
+
+.Header > div > span {
+    margin-top: 2%;
 }
 
 
@@ -24,6 +27,5 @@
 
 .Header h1 {
     font-size: 1.5em;
-    margin: 10;
 }
 

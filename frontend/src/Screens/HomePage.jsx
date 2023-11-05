@@ -1,8 +1,8 @@
 import React from 'react'
 import Herosection from '../Components/Herosection'
-import Header from '../Components/Header'
 import styles from '../Static/Homepage.module.css'
 import Main from "../Components/Main"
+import ToGame from "../Components/ToGame"
 
 
 
@@ -11,9 +11,9 @@ const HomePage = () => {
   return (
     <div className={styles.Homepage}>
    
-      <Header />
       <Herosection />
       <Main />
+      <ToGame />
   
     </div>
   

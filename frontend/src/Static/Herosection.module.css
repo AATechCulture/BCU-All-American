@@ -1,11 +1,27 @@
-.Herosection > div > h5{
-    color: #FFFFFF;
+.Herosection {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 0.5rem;
+    background-color: transparent;
 }
 
-.Herosection > :nth-child(2){
-    color: #D35757;
+.Herosection h1 {
+    margin: 0; 
+    font-size: 38px;
+    font-weight: bold;
+    background-color: transparent; 
+    
 }
 
-.Herosection > :nth-child(3){
+.Herosection .white {
+    color: #FFFFFF; 
+}
+
+.Herosection .red {
+    color: #D35757; 
+}
+
+.Herosection .blue {
     color: #0084FF;
 }
