@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import Main from '../containers/Main';
+import Main from '../containers/HomeMain';
 
 const Home = () => {
     return (

@@ -3,7 +3,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const plane = require("../resources/plane.png")
 
-function Main() {
+function HomeMain() {
   return (
     <div className='font-ubuntu text-white text-sm'>
       <div className='flex mt-20 text-2xl sm:text-3xl md:text-4xl xl:text-5xl font-extrabold flex-column justify-center items-center'>
@@ -41,4 +41,4 @@ function Main() {
   )
 }
 
-export default Main
+export default HomeMain
